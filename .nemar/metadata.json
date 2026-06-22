@@ -1,42 +1,123 @@
 {
   "version": "2.0",
-  "dataset_id": "on003620",
-  "source": "openneuro",
-  "source_id": "ds003620",
+  "pipeline_stage": "validated",
   "title": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions",
-  "authors": {
-    "Magnus Liebherr": {},
-    "Andrew W. Corcoran": {},
-    "Phillip M. Alday": {},
-    "Scott Coussens": {},
-    "Valeria Bellan": {},
-    "Caitlin A. Howlett": {},
-    "Maarten A. Immink": {},
-    "Mark Kohler": {},
-    "Matthias Schlesewsky": {},
-    "Ina Bornkessel-Schlesewsky": {}
-  },
   "license": "CC0",
   "dataset_type": "raw",
+  "authors": {
+    "Magnus Liebherr": {
+      "orcid": "0000-0001-8580-2464"
+    },
+    "Andrew W. Corcoran": {
+      "orcid": "0000-0002-0449-4883"
+    },
+    "Phillip M. Alday": {
+      "orcid": "0000-0002-9984-5745"
+    },
+    "Scott Coussens": {
+      "orcid": "0000-0002-3564-5859"
+    },
+    "Valeria Bellan": {
+      "orcid": "0000-0002-8512-5288"
+    },
+    "Caitlin A. Howlett": {
+      "orcid": "0000-0002-4584-8641"
+    },
+    "Maarten A. Immink": {
+      "orcid": "0000-0002-4652-0090"
+    },
+    "Mark Kohler": {
+      "orcid": "0000-0001-7265-6242"
+    },
+    "Matthias Schlesewsky": {
+      "orcid": "0000-0003-4131-8077"
+    },
+    "Ina Bornkessel-Schlesewsky": {
+      "orcid": "0000-0002-3238-6492"
+    }
+  },
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003620.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003620",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003620",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41598-021-01772-8",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4",
-  "recording_modality": [
-    "eeg"
-  ],
-  "datatypes": [
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "FT160100437"
+      "funder_name": "Australian Research Council",
+      "award_number": "FT160100437",
+      "award_title": "Future Fellowship"
+    },
+    {
+      "funder_name": "University of South Australia",
+      "award_title": "Research Themes Investment Scheme"
     }
   ],
-  "acknowledgements": "AWC and CAH are supported by Australian Government Research Training Program (RTP) scholarships. IBS acknowledges the support of an Australian Research Council Future Fellowship (FT160100437). This research was funded by the University of South Australia under the Research Themes Investment Scheme. We would also like to thank the undergraduate students in course BEHL 3021 ('Cognitive Neuroscience') at the University of South Australia who participated in this study and helped with data collection as part of their class project."
+  "modalities": [
+    "eeg"
+  ],
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".R",
+    ".csv",
+    ".eeg",
+    ".erp",
+    ".gitattributes",
+    ".json",
+    ".m",
+    ".md",
+    ".png",
+    ".rds",
+    ".set",
+    ".tsv",
+    ".txt",
+    ".vhdr",
+    ".vmrk",
+    ".wav"
+  ],
+  "description": "This mobile EEG dataset investigates attentional processing during an auditory oddball task across three environmental conditions: laboratory, outdoor field, and naturalistic campus navigation. Forty-four healthy adults performed the task under both attended (counting deviant tones) and ignored stimulus conditions, with 32-channel EEG recordings capturing neural responses to complex tone stimuli. The study examines how cognitive task demands, motor demands, and environmental complexity modulate event-related potentials and behavioral performance.",
+  "methods_description": "EEG signals were recorded from 32 active electrodes using a Brain Vision LiveAmp 32 amplifier. Participants performed an oddball task with complex tone stimuli (piano and horn) in three settings: sitting in a quiet laboratory, walking around a sports field, and navigating a university campus route. Each environmental condition was performed twice: once while attending to oddball stimuli (counting deviant tones) and once while ignoring the stimuli. Data were preprocessed using EEGLAB and ERPLAB toolboxes with independent component analysis for artifact removal.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "oddball task"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "attention"
+    },
+    {
+      "term": "mobile neuroimaging"
+    },
+    {
+      "term": "naturalistic environments"
+    },
+    {
+      "term": "auditory processing"
+    }
+  ],
+  "source_hash": "05930be92cbfd3b0654a217df701760b8ecab6d142b1494f3b2de10cf8a003e7"
 }
