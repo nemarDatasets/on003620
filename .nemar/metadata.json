@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions",
+  "description": "This dataset comprises mobile EEG recordings from 44 healthy adults performing an auditory oddball task across three environmental conditions: laboratory, outdoor field, and campus navigation. Participants attended to or ignored complex tone stimuli (piano and horn) while 32-channel EEG was recorded using a Brain Vision LiveAmp amplifier. The study investigates how cognitive task demands, motor demands, and environmental complexity modulate attentional processing and event-related potentials during naturalistic behavior.",
+  "methods_description": "EEG signals were recorded from 32 active electrodes using a Brain Vision LiveAmp 32 amplifier. Participants performed an oddball task with complex tone stimuli in three settings: sitting in a quiet laboratory, walking around a sports field, and navigating a university campus route. Each environmental condition was performed twice: once while counting deviant tones (COUNT) and once while ignoring stimuli (IGNORE). Data were preprocessed using EEGLAB with ICA-based artifact removal, bandpass filtering, and epoch extraction.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -36,12 +38,30 @@
       "orcid": "0000-0002-3238-6492"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003620.v1.1.1",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "auditory oddball"
+    },
+    {
+      "term": "attention"
+    },
+    {
+      "term": "mobile neuroimaging"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "naturalistic environments"
+    },
+    {
+      "term": "motor demands"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003620",
       "identifier_type": "URL",
@@ -56,25 +76,29 @@
       "identifier": "10.1038/s41598-021-01772-8",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003620.v1.1.1",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
     {
       "funder_name": "Australian Research Council",
-      "award_number": "FT160100437",
-      "award_title": "Future Fellowship"
+      "award_number": "FT160100437"
     },
     {
       "funder_name": "University of South Australia",
       "award_title": "Research Themes Investment Scheme"
     }
   ],
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "75.2 GB (676 files)"
   ],
   "formats": [
     ".R",
@@ -92,32 +116,8 @@
     ".txt",
     ".vhdr",
     ".vmrk",
-    ".wav"
+    ".wav",
+    ".yml"
   ],
-  "description": "This mobile EEG dataset investigates attentional processing during an auditory oddball task across three environmental conditions: laboratory, outdoor field, and naturalistic campus navigation. Forty-four healthy adults performed the task under both attended (counting deviant tones) and ignored stimulus conditions, with 32-channel EEG recordings capturing neural responses to complex tone stimuli. The study examines how cognitive task demands, motor demands, and environmental complexity modulate event-related potentials and behavioral performance.",
-  "methods_description": "EEG signals were recorded from 32 active electrodes using a Brain Vision LiveAmp 32 amplifier. Participants performed an oddball task with complex tone stimuli (piano and horn) in three settings: sitting in a quiet laboratory, walking around a sports field, and navigating a university campus route. Each environmental condition was performed twice: once while attending to oddball stimuli (counting deviant tones) and once while ignoring the stimuli. Data were preprocessed using EEGLAB and ERPLAB toolboxes with independent component analysis for artifact removal.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "oddball task"
-    },
-    {
-      "term": "event-related potentials"
-    },
-    {
-      "term": "attention"
-    },
-    {
-      "term": "mobile neuroimaging"
-    },
-    {
-      "term": "naturalistic environments"
-    },
-    {
-      "term": "auditory processing"
-    }
-  ],
-  "source_hash": "05930be92cbfd3b0654a217df701760b8ecab6d142b1494f3b2de10cf8a003e7"
+  "source_hash": "d43e606d643af3332dc2e292c2106535164c9e2fe9a7d021fec6eb88e7f9a819"
 }
