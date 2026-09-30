@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Runabout: A mobile EEG study of auditory oddball processing in laboratory and real-world conditions",
-  "description": "This dataset comprises mobile EEG recordings from 44 healthy adults performing an auditory oddball task across three environmental conditions: laboratory, outdoor field, and campus navigation. Participants attended to or ignored complex tone stimuli (piano and horn) while 32-channel EEG was recorded using a Brain Vision LiveAmp amplifier. The study investigates how cognitive task demands, motor demands, and environmental complexity modulate attentional processing and event-related potentials during naturalistic behavior.",
-  "methods_description": "EEG signals were recorded from 32 active electrodes using a Brain Vision LiveAmp 32 amplifier. Participants performed an oddball task with complex tone stimuli in three settings: sitting in a quiet laboratory, walking around a sports field, and navigating a university campus route. Each environmental condition was performed twice: once while counting deviant tones (COUNT) and once while ignoring stimuli (IGNORE). Data were preprocessed using EEGLAB with ICA-based artifact removal, bandpass filtering, and epoch extraction.",
+  "description": "Raw and pre-processed mobile EEG recordings from 44 healthy adults performing an auditory oddball task with complex tone stimuli. The task was performed in three environments of increasing complexity: a quiet laboratory, a sports field, and a university campus route. In each environment participants either counted deviant tones or ignored the tones. The dataset supports investigation of how cognitive task demands, motor demands and environmental complexity affect attentional processing, and includes the MATLAB and R analysis pipeline.",
+  "methods_description": "EEG was recorded from 32 active electrodes using a Brain Vision LiveAmp 32 amplifier while participants completed an oddball task (piano and horn tones) in LAB, FIELD and CAMPUS settings, each under COUNT and IGNORE instructions. Preprocessing used EEGLAB, ERPLAB, ICLabel and clean_rawdata in MATLAB. Statistical analysis used mixed-effects models in R.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -43,32 +43,28 @@
       "term": "EEG"
     },
     {
+      "term": "mobile EEG"
+    },
+    {
       "term": "auditory oddball"
     },
     {
-      "term": "attention"
+      "term": "Attention",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001288"
     },
     {
-      "term": "mobile neuroimaging"
-    },
-    {
-      "term": "event-related potentials"
+      "term": "Walking",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D016138"
     },
     {
       "term": "naturalistic environments"
-    },
-    {
-      "term": "motor demands"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003620",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003620",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -81,12 +77,18 @@
       "identifier": "10.18112/openneuro.ds003620.v1.1.1",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003620",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
     {
       "funder_name": "Australian Research Council",
-      "award_number": "FT160100437"
+      "award_number": "FT160100437",
+      "award_title": "Future Fellowship"
     },
     {
       "funder_name": "University of South Australia",
@@ -98,7 +100,7 @@
     "eeg"
   ],
   "sizes": [
-    "75.2 GB (676 files)"
+    "70.08 GB (676 files)"
   ],
   "formats": [
     ".R",
