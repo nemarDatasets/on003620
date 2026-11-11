@@ -6,7 +6,7 @@
     },
     "study_date": {
         "LongName": "study_date",
-        "Description": "date of the study (ISO 8601, YYYY-MM-DD; was dd/mm/yyyy)"
+        "Description": "year of the study session (YYYY). The source release gives the exact date; this version keeps the year only, because no consent or authorization covering publication of the exact date is documented."
     },
     "sex": {
         "LongName": "sex",
@@ -15,10 +15,6 @@
             "m": "male",
             "f": "female"
         }
-    },
-    "DOB": {
-        "LongName": "DOB",
-        "Description": "date of birth (ISO 8601, YYYY-MM-DD; was dd/mm/yyyy)"
     },
     "age": {
         "LongName": "age",
