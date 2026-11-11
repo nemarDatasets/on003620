@@ -12,7 +12,7 @@
   "EEGReference": "FCz",
   "PowerLineFrequency": 50,
   "EEGGround": "AFz",
-  "MiscChannelCount": 3,
+  "MISCChannelCount": 3,
   "Manufacturer": "Brain Vision",
   "ManufacturersModelName": "LiveAmp",
   "CapManufacturer": "Brain Products actiCAP",

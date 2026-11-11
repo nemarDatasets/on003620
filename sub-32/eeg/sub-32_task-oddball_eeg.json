@@ -1,0 +1,21 @@
+{
+  "TaskName": "Oddball",
+  "InstitutionName": "University of South Australia",
+  "InstitutionAddress": "Magill Campus, St Bernards Road, Magill SA 5072, Australia",
+  "InstitutionalDepartmentName": "Cognitive and Systems Neuroscience Research Hub",
+  "SamplingFrequency": 500,
+  "EEGChannelCount": 32,
+  "EOGChannelCount": 0,
+  "ECGChannelCount": 0,
+  "EMGChannelCount": 0,
+  "EEGReference": "FCz",
+  "PowerLineFrequency": 50,
+  "EEGGround": "AFz",
+  "MISCChannelCount": 3,
+  "Manufacturer": "Brain Vision",
+  "ManufacturersModelName": "LiveAmp",
+  "CapManufacturer": "Brain Products actiCAP",
+  "SoftwareFilters": "n/a",
+  "RecordingDuration": 3858.798,
+  "RecordingType": "continuous"
+}

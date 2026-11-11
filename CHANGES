@@ -1,3 +1,23 @@
+1.0.1 2026-10-16 (NEMAR)
+  - Added sub-32/eeg/sub-32_task-oddball_eeg.json and _channels.tsv, missing since the source release
+    (OpenNeuro ds003620 has none for sub-32). Task-level values are those shared by all 43 other
+    subjects; RecordingDuration = DataPoints x SamplingInterval of its .vhdr (3858.798 s).
+    DeviceSerialNumber is not set (not recorded for this file).
+  - channels.tsv of every subject (identical in all 43): column sampling_reference renamed to
+    sampling_frequency (BIDS); reference column holds the EEGReference FCz instead of 'common';
+    x_dir/y_dir/z_dir typed MISC with units mg, as stated in every .vhdr header (were EEG, uV);
+    the uV unit written in UTF-8 (was a Latin-1 byte); LF line endings.
+  - eeg.json of every subject: key MiscChannelCount (not a BIDS key) renamed to MISCChannelCount.
+  - Each subject's _electrodes.json held coordinate-system keys (EEGCoordinateSystem RAS, mm), not
+    column descriptions: moved unchanged to sub-XX/eeg/sub-XX_coordsystem.json (BIDS requires it with
+    electrodes.tsv). Identical in all 44 subjects. EEGCoordinateSystem "RAS" (not a BIDS
+    keyword) written "Other"; the existing EEGCoordinateSystemDescription defines it (RAS, mm).
+  - participants.tsv: participant_id written as the subject folders (sub-01, was sub-1); trailing empty
+    row removed. Privacy: the DOB column (exact date of birth) is removed and study_date is reduced to the
+    year (YYYY), because no consent or authorization covering publication of the exact dates is documented;
+    age (years) is kept as released. participants.json updated.
+  - electrodes.tsv impedance 'not' (sub-01 4 rows, sub-18 12, sub-25 32) written n/a.
+  - Not fixable here: sub-31 has no _eeg.eeg data file, in the source release as well.
 1.1.1 2021-11-17
   - - update publication reference
 1.1.0 2021-10-15
